@@ -1,0 +1,417 @@
+
+<html lang="id">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Rumah Kecil Ega</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    
+    <!-- Boxicons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/heroicons@1.0.6/outline/heroicons.min.js"></script>
+
+
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+
+
+    <style>
+       body {
+        font-family: 'Roboto', sans-serif;
+        overflow-x: hidden;
+        scrollbar-width: none;
+       }
+        #particles-js {
+            position: absolute;
+            top: 100vh;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: #000;
+            z-index: -1;
+        }
+        #particles-js2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: #000;
+            z-index: -1;
+        }
+        @media (max-width: 768px) {
+            #particles-js {
+              top:150vh;
+            }
+        }
+        .cursor {
+          position: fixed;
+          pointer-events: none; /* Agar tidak mengganggu interaksi lainnya */
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 30px; /* Ukuran ikon */
+          z-index: 99;
+        }
+    </style>
+  </head>
+  <body class="bg-black text-white">
+    <div class="">
+      <i class="bx bx-smile cursor text-yellow-200"></i>
+    </div>
+    <!-- Header -->
+    <header class="py-4 sticky top-0 z-10">
+      <div class="container mx-auto flex justify-evenly items-center px-4">
+        <div class="text-2xl text-green-400">
+          <i class='bx bxs-castle'></i>
+        </div>
+        <nav class="">
+          <a class="text-2xl text-green-400 hover:text-green-500 transition-color" href="#">
+            <i class="bx bx-home"></i> 
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <div id="particles-js2"></div>
+
+    <!-- Hero Section -->
+    <section  class="relative py-20" id="hero">
+      <div class="container mx-auto flex flex-col md:flex-row lg:justify-between items-center px-4">
+        <div class="md:w-1/2 text-center md:text-left sm:ml-0 md:ml-40">
+          <h1 class="text-4xl md:text-5xl font-bold text-white" data-sr="enter top">
+            SELAMAT DATANG
+            <span class="text-green-400">PERKENALKAN SAYA EGA</span>
+          </h1>
+          <p class="mt-4 text-gray-400" data-sr="enter top">
+            "Saya web developer ahli Laravel, desain responsif dengan Tailwind CSS, dan menciptakan pengalaman pengguna modern."
+          </p>
+          <button class="mt-6 text-green-400 py-2 px-4 rounded-full" data-sr="enter top">
+            <a href="https://instagram.com/egdrga">
+              <i class='bx bxl-instagram text-4xl text-green-500'></i> 
+            </a>
+            <a href="https://wa.me/0881022496955">
+              <i class='bx bxl-whatsapp text-green-500 text-4xl ml-4'></i> 
+            </a>
+          </button>
+        </div>
+        <div class="md:w-1/2 mt-8 md:mt-0 w-xl overflow-hidden sm:ml-0 md:ml-40">
+          <img alt="Creative design agency image" src="me.png" data-sr="enter top" class="w-full max-w-sm" />
+        </div>
+      </div>
+    </section>
+
+    <div id="particles-js"></div>
+
+    <!-- Layanan Section -->
+<section class=" py-20" id="layanan">
+  <div class="container mx-auto text-center px-4">
+    <h2 class="text-3xl font-bold text-white" data-sr="enter bottom">
+      Apa yang Saya Lakukan
+    </h2>
+    <p class="mt-4 text-gray-400" data-sr="enter bottom">
+      Saya Menawarkan Beberapa Aspek Pembuatan Website
+    </p>
+    <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-gray-800 bg-opacity-50 p-6 rounded-lg hover:bg-gray-900" data-sr="enter left">
+        <i class="bx bx-palette text-green-400 text-4xl"></i>
+        <h3 class="mt-4 text-xl font-bold text-white">
+          Identitas Merek
+        </h3>
+        <p class="mt-2 text-gray-400">
+          Saya membantu menciptakan identitas merek yang kuat dan berkesan.
+        </p>
+      </div>
+      <div class="bg-gray-800 bg-opacity-50 p-6 rounded-lg hover:bg-gray-900" data-sr="enter top">
+        <i class="bx bx-laptop text-green-400 text-4xl"></i>
+        <h3 class="mt-4 text-xl font-bold text-white">
+          Desain Situs Web
+        </h3>
+        <p class="mt-2 text-gray-400">
+          Saya merancang situs web yang modern dan responsif.
+        </p>
+      </div>
+      <div class="bg-gray-800 bg-opacity-50 p-6 rounded-lg hover:bg-gray-900" data-sr="enter right">
+        <i class="bx bx-mobile-alt text-green-400 text-4xl"></i>
+        <h3 class="mt-4 text-xl font-bold text-white">
+          Desain UI & UX
+        </h3>
+        <p class="mt-2 text-gray-400">
+          Pengalaman pengguna yang mulus dan antarmuka yang intuitif adalah keahlian Saya.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Tentang Saya Section -->
+<section class="py-20" id="tentang-Saya">
+  <div class="container mx-auto flex flex-col md:flex-row items-center px-4 gap-8">
+    <div class="md:w-1/2 mt-8 md:mt-0 mx-auto sm:mt-10">
+      <h2 class="text-5xl font-bold text-white" data-sr="enter bottom">
+        Saya Menggunakan
+        <span class="text-green-400">Kreativitas</span>
+        untuk Mencapai Tujuan Klien Saya.
+      </h2>
+      <p class="mt-4 text-gray-400" data-sr="enter bottom">
+        Saya percaya bahwa setiap proyek adalah kesempatan untuk menunjukkan kreativitas terbaik Saya. Saya bekerja keras untuk memenuhi harapan klien dengan solusi inovatif.
+      </p>
+      <div class="mt-6 flex space-x-4" data-sr="enter bottom">
+        <div class="flex items-center">
+          <!-- Ikon terbaru untuk Kode Bersih -->
+          <i class='text-xl bx bx-code-curly text-green-400 text-2xl font-bold'></i>
+          <div class="ml-2">
+            <h3 class="text-xl font-bold text-white">
+              Kode Bersih
+            </h3>
+            <p class="text-gray-400">
+              Saya menjamin kualitas dan kebersihan setiap baris kode.
+            </p>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <!-- Ikon terbaru untuk Desain Modern -->
+          <i class="bx bxs-paint text-green-400 text-2xl"></i>
+          <div class="ml-2">
+            <h3 class="text-xl font-bold text-white">
+              Desain Modern
+            </h3>
+            <p class="text-gray-400">
+              Desain Saya selalu mengikuti tren terbaru untuk memastikan hasil yang relevan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Stats Section -->
+    <section class="bg-black py-20" id="stats" >
+      <div class="container mx-auto text-center px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div data-sr="enter left">
+            <h3 class="text-4xl font-bold text-green-400">10+</h3>
+            <p class="mt-2 text-gray-400">Proyek Selesai</p>
+          </div>
+          <div data-sr="enter top">
+            <h3 class="text-4xl font-bold text-green-400"><i class="fas fa-code"></i></h3>
+            <p class="mt-3 text-gray-400">Bekerja Personal Namun Profesional</p>
+          </div>
+          <div data-sr="enter right">
+            <h3 class="text-4xl font-bold text-green-400">50 jam lebih</h3>
+            <p class="mt-2 text-gray-400">Jam Terbang</p>
+          </div>
+        </div>
+      </div>
+    </section>
+<hr class="max-w-3xl mx-auto">
+    <!-- Footer -->
+<footer class="bg-black text-white pt-10">
+  <div class="container mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-4">Hubungi Saya</h2>
+    <!-- <p class="mb-6">Kirim pesan langsung kepada Saya menggunakan form di bawah ini.</p> -->
+    
+    <!-- Formulir Kontak -->
+    <!-- <form action="send_email.php" method="POST" class="space-y-4 max-w-xl mx-auto"> -->
+      <!-- Nama -->
+      <!-- <div>
+        <label for="name" class="block text-sm font-medium">Nama Anda</label>
+        <input type="text" name="name" id="name" class="w-full px-4 py-2 rounded-lg bg-gray-700 text-white focus:outline-none" required />
+      </div> -->
+      
+      <!-- Email -->
+      <!-- <div>
+        <label for="email" class="block text-sm font-medium">Email Anda</label>
+        <input type="email" name="email" id="email" class="w-full px-4 py-2 rounded-lg bg-gray-700 text-white focus:outline-none" required />
+      </div> -->
+
+      <!-- Pesan -->
+      <!-- <div>
+        <label for="message" class="block text-sm font-medium">Pesan Anda</label>
+        <textarea name="message" id="message" rows="4" class="w-full px-4 py-2 rounded-lg bg-gray-700 text-white focus:outline-none" required></textarea>
+      </div> -->
+
+      <!-- Tombol Kirim -->
+      <!-- <div>
+        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg flex justify-center items-center space-x-2">
+          <i class="bx bx-send text-xl"></i>
+          <span>Kirim Pesan</span>
+        </button>
+      </div>
+    </form> -->
+  </div>
+  
+  <!-- Ikon Sosial Media -->
+  <div class="mt-2 text-center">
+    <a href="https://www.instagram.com/egdrga" class="text-white mx-4 hover:text-gray-400" target="_blank">
+      <i class="bx bxl-instagram text-2xl"></i>
+    </a>
+    <a href="https://wa.me/0881022496955" class="text-white mx-4 hover:text-gray-400" target="_blank">
+      <i class="bx bxl-whatsapp text-2xl"></i>
+    </a>
+  </div>
+  
+  <!-- Hak Cipta -->
+  <p class="text-center mt-6 text-sm text-red-500 py-10">&copy; 2025 Ega Dirga Mufsya</p>
+</footer>
+
+    <script>
+      ScrollReveal().reveal('[data-sr="enter top"]', {
+        origin: 'top',
+        distance: '20px',
+        duration: 600,
+        delay: 100,
+        opacity: 0,
+        scale: 0.9,
+        reset: true,
+        easing: 'ease-out',
+      });
+
+      ScrollReveal().reveal('[data-sr="enter bottom"]', {
+        origin: 'bottom',
+        distance: '120px',
+        duration: 600,
+        delay: 100,
+        opacity: 0.9,
+        scale: 0.9,
+        reset: true,
+        easing: 'ease-out',
+      });
+
+      ScrollReveal().reveal('[data-sr="enter left"]', {
+        origin: 'left',
+        distance: '120px',
+        duration: 600,
+        delay: 100,
+        opacity: 0,
+        scale: 0.9,
+        reset: true,
+        easing: 'ease-out',
+      });
+
+      ScrollReveal().reveal('[data-sr="enter right"]', {
+        origin: 'right',
+        distance: '120px',
+        duration: 600,
+        delay: 100,
+        opacity: 0,
+        scale: 0.9,
+        reset: true,
+        easing: 'ease-out',
+      });
+    </script>
+
+<script>
+  particlesJS("particles-js", {
+      "particles": {
+          "number": {
+              "value": 80,
+              "density": {
+                  "enable": true,
+                  "value_area": 800
+              }
+          },
+          "color": {
+              "value": "#ffffff"
+          },
+          "shape": {
+              "type": "circle"
+          },
+          "opacity": {
+              "value": 0.5,
+              "anim": {
+                  "enable": true,
+                  "speed": 1
+              }
+          },
+          "size": {
+              "value": 1,
+              "random": true,
+              "anim": {
+                  "enable": true,
+                  "speed": 40,
+                  "size_min": 0.1
+              }
+          },
+          "line_linked": {
+              "enable": true,
+              "distance": 150,
+              "color": "#ffffff",
+              "opacity": 0.4,
+              "width": 1
+          },
+          "move": {
+              "enable": true,
+              "speed": 3
+          }
+      },
+      "retina_detect": true
+  });
+  particlesJS("particles-js2", {
+      "particles": {
+          "number": {
+              "value": 80,
+              "density": {
+                  "enable": true,
+                  "value_area": 800
+              }
+          },
+          "color": {
+              "value": "#ffffff"
+          },
+          "shape": {
+              "type": "circle"
+          },
+          "opacity": {
+              "value": 0.5,
+              "anim": {
+                  "enable": true,
+                  "speed": 1
+              }
+          },
+          "size": {
+              "value": 1,
+              "random": true,
+              "anim": {
+                  "enable": true,
+                  "speed": 40,
+                  "size_min": 0.1
+              }
+          },
+          "line_linked": {
+              "enable": true,
+              "distance": 150,
+              "color": "#ffffff",
+              "opacity": 0.4,
+              "width": 1
+          },
+          "move": {
+              "enable": true,
+              "speed": 3
+          }
+      },
+      "retina_detect": false
+  });
+  // Pilih elemen kursor
+const cursor = document.querySelector('.cursor');
+
+// Mendengarkan pergerakan mouse
+document.addEventListener('mousemove', (e) => {
+  gsap.to(cursor, {
+        duration: 0.2, 
+        x: e.clientX - cursor.offsetWidth / 1,  // Posisi X
+        y: e.clientY - cursor.offsetHeight / 1, // Posisi Y
+    });
+});
+
+</script>
+  </body>
+</html>
