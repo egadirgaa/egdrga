@@ -8,9 +8,10 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <meta name="description" content="Portofolio Ega, seorang web developer Laravel yang menguasai Tailwind CSS dan menciptakan desain responsif.">
+
     
     <!-- Boxicons CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/boxicons/css/boxicons.min.css" rel="stylesheet">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/heroicons@1.0.6/outline/heroicons.min.js"></script>
 
@@ -61,8 +62,8 @@
     </style>
   </head>
   <body class="bg-black text-white">
-    <div class="">
-      <i class="bx bx-smile cursor text-yellow-200"></i>
+    <div class="cursor hidden">
+      <i class="bx bx-smile text-yellow-200"></i>
     </div>
     <!-- Header -->
     <header class="py-4 sticky top-0 z-10">
@@ -70,7 +71,7 @@
         <div class="text-2xl text-green-400">
           <i class='bx bxs-castle'></i>
         </div>
-        <nav class="">
+        <nav>
           <a class="text-2xl text-green-400 hover:text-green-500 transition-color" href="#">
             <i class="bx bx-home"></i> 
           </a>
@@ -83,7 +84,7 @@
     <!-- Hero Section -->
     <section  class="relative py-20" id="hero">
       <div class="container mx-auto flex flex-col md:flex-row lg:justify-between items-center px-4">
-        <div class="md:w-1/2 text-center md:text-left sm:ml-0 md:ml-40">
+        <div class="md:w-1/2 text-center md:text-left sm:ml-0 md:ml-5 lg:ml-40">
           <h1 class="text-4xl md:text-5xl font-bold text-white" data-sr="enter top">
             SELAMAT DATANG
             <span class="text-green-400">PERKENALKAN SAYA EGA</span>
@@ -91,17 +92,17 @@
           <p class="mt-4 text-gray-400" data-sr="enter top">
             "Saya web developer ahli Laravel, desain responsif dengan Tailwind CSS, dan menciptakan pengalaman pengguna modern."
           </p>
-          <button class="mt-6 text-green-400 py-2 px-4 rounded-full" data-sr="enter top">
+          <div class="mt-6 text-green-400 py-2 px-4 rounded-full" data-sr="enter top">
             <a href="https://instagram.com/egdrga">
               <i class='bx bxl-instagram text-4xl text-green-500'></i> 
             </a>
             <a href="https://wa.me/0881022496955">
               <i class='bx bxl-whatsapp text-green-500 text-4xl ml-4'></i> 
             </a>
-          </button>
+          </div>
         </div>
-        <div class="md:w-1/2 mt-8 md:mt-0 w-xl overflow-hidden sm:ml-0 md:ml-40">
-          <img alt="Creative design agency image" src="me.png" data-sr="enter top" class="w-full max-w-sm" />
+        <div class="md:max-w-1/2 mx-auto mt-8 md:mt-0 w-xl overflow-hidden sm:ml-0 md:ml-10">
+          <img alt="Creative design agency image" src="me.png" data-sr="enter top" class="w-full max-w-sm"/>
         </div>
       </div>
     </section>
@@ -212,6 +213,7 @@
         </div>
       </div>
     </section>
+    
 <hr class="max-w-3xl mx-auto">
     <!-- Footer -->
 <footer class="bg-black text-white pt-10">
@@ -288,7 +290,7 @@
 
       ScrollReveal().reveal('[data-sr="enter left"]', {
         origin: 'left',
-        distance: '120px',
+        distance: '30px',
         duration: 600,
         delay: 100,
         opacity: 0,
@@ -299,7 +301,7 @@
 
       ScrollReveal().reveal('[data-sr="enter right"]', {
         origin: 'right',
-        distance: '120px',
+        distance: '30px',
         duration: 600,
         delay: 100,
         opacity: 0,
@@ -411,6 +413,15 @@ document.addEventListener('mousemove', (e) => {
         y: e.clientY - cursor.offsetHeight / 1, // Posisi Y
     });
 });
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute("href")).scrollIntoView({
+        behavior: "smooth"
+      });
+    });
+  });
 
 </script>
   </body>
